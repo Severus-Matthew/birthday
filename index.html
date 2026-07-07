@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Happy Birthday — From All of Us</title>
+  <meta name="description" content="A group birthday card from friends and family." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Pacifico&family=Patrick+Hand&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="stage" aria-live="polite">
+    <div class="floating-bg" aria-hidden="true">
+      <span>♡</span><span>✦</span><span>♥</span><span>✧</span><span>♡</span><span>✦</span>
+    </div>
+
+    <section class="card-scene" id="cardScene">
+      <div class="book-card" id="bookCard">
+        <div class="inside-card" aria-label="Inside of birthday card with group messages">
+          <div class="page left-page">
+            <div class="paper-texture"></div>
+          </div>
+          <div class="page right-page">
+            <div class="paper-texture"></div>
+          </div>
+          <div class="spine"></div>
+          <div id="messageLayer" class="message-layer"></div>
+          <div class="inside-doodles" aria-hidden="true">
+            <span class="doodle d1">♡</span>
+            <span class="doodle d2">✦</span>
+            <span class="doodle d3">✨</span>
+            <span class="doodle d4">💖</span>
+            <span class="doodle d5">🎉</span>
+            <span class="doodle d6">😂</span>
+            <span class="doodle d7">😎</span>
+            <span class="doodle d8">🥰</span>
+          </div>
+          <div class="closing-line">From all of us <span>♥</span></div>
+          <button class="back-btn" id="backBtn" type="button" aria-label="Go back to front of card">← Back</button>
+        </div>
+
+        <article class="front-cover" aria-label="Front of birthday card">
+          <div class="emoji-border top" aria-hidden="true"></div>
+          <div class="emoji-border bottom" aria-hidden="true"></div>
+          <div class="emoji-border left" aria-hidden="true"></div>
+          <div class="emoji-border right" aria-hidden="true"></div>
+
+          <div class="confetti" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+
+          <header class="front-header">
+            <p class="tiny-label">A little surprise from everyone</p>
+            <h1>Happy Birthday!</h1>
+            <p class="subtitle">You are officially being celebrated by the whole squad ✨</p>
+          </header>
+
+          <div class="front-grid">
+            <div class="side-stickers left-stickers" aria-hidden="true">
+              <span class="emoji-card big wobble">😂</span>
+              <span class="caption cap1">legendary</span>
+              <span class="emoji-card medium bounce">😘</span>
+              <span class="speech">Still cute tho</span>
+              <span class="emoji-card medium wiggle">😜</span>
+              <span class="caption cap2">nice!</span>
+            </div>
+
+            <figure class="photo-frame">
+              <img src="assets/birthday-photo.jpeg" alt="Birthday person wearing headphones and making a funny face" />
+              <figcaption>Today’s main character 🎂</figcaption>
+            </figure>
+
+            <div class="side-stickers right-stickers" aria-hidden="true">
+              <span class="emoji-card big bounce">😍</span>
+              <span class="speech speech2">Everyone says: best human!</span>
+              <span class="emoji-card medium wobble">😱</span>
+              <span class="caption cap3">birthday alert</span>
+              <span class="emoji-card medium wiggle">😎</span>
+            </div>
+          </div>
+
+          <div class="front-footer">
+            <p>Click Next to open your card</p>
+            <button class="next-btn" id="nextBtn" type="button">Next <span>→</span></button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
