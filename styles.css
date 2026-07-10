@@ -124,7 +124,7 @@ body {
 .floating-bg span:nth-child(6) { right: 40%; top: 6%; animation-delay: -5s; }
 
 .card-scene {
-  perspective: 1800px;
+  perspective: 18000px;
   width: 100%;
   display: grid;
   place-items: center;
@@ -133,8 +133,8 @@ body {
 .book-card {
   position: relative;
   width: 96%;
-  aspect-ratio: 1220 / 1090;
-  min-height: 70vh;
+  aspect-ratio: 1220 / 1350;
+  min-height: 85vh;          /* increase visible height */
   transform-style: preserve-3d;
 }
 
@@ -217,7 +217,7 @@ body {
 
 .front-header { position: relative; text-align: center; z-index: 4; }
 .tiny-label {
-  margin: 2% auto 2%;
+  margin: 4% auto 2%;
   display: inline-block;
   padding: 0.5em 1em;
   border-radius: 999px;
@@ -226,7 +226,7 @@ body {
   color: #9d5860;
 }
 .front-header h1 {
-  margin: 0% 0 2.6%;
+  margin: 1% 0 2.6%;
   font-family: "Pacifico", cursive;
   font-size: clamp(3.5rem, 8vw, 6.4rem);
   line-height: 1.02;
@@ -237,7 +237,7 @@ body {
   margin: 0 auto;
   width: fit-content;
   max-width: 90%;
-  padding: 0.2em 0.4em;
+  padding: 0.6em 0.6em;
   background: #f7b09e;
   border-radius: 3% 3% 3% 3%;
   color: #6e3942;
@@ -377,7 +377,7 @@ body {
 .emoji-border.bottom::before { content: "😂 😍 😜 😎 😱 🥳 🤪 😘 🤩 😆 💖 🎂 😂 😍 😜 😎 😱 🥳 🤪 😘 🤩 😆 💖 🎂"; }
 .emoji-border.left::before,
 .emoji-border.right::before {
-  content: "😂\A 😍\A 😜\A 😎\A 😱\A 🥳\A 🤪\A😂\A 😍\A 😜\A 😎\A 😱\A 🥳\A 🤪";
+  content: "😂\A 😍\A 😜\A 😎\A 😱\A 🥳\A 🤪\A😂\A 😍\A 😜\A 😎\A 😱\A 🥳\A 🤪\A 😂\A 😍\A 😜\A 😎";
   white-space: pre;
   line-height: 1.75;
 }
@@ -418,7 +418,7 @@ body {
   padding: 1.3% 1.5% 1.3%;
   color: #363046;
   font-family: "Caveat", cursive;
-  font-size: clamp(1.1rem, 1.8vw, 1.6rem);
+  font-size: clamp(1.1rem, 1.5vw, 1.6rem);
   line-height: 0.96;
   background: var(--note-bg, #fff6cc);
   border-radius: var(--note-radius, 1.3%);
@@ -456,8 +456,8 @@ body {
 .note.heart-note::before { display: none; }
 .note .from {
   display: block;
-  margin-top: 0.6em;
-  font-size: 1.08em;
+  margin-top: 0.1em;
+  font-size: 0.87em;
   font-weight: 700;
   color: #d85a76;
   text-align: right;
